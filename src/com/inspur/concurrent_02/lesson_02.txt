@@ -1,0 +1,4 @@
+synchronized的作用:
+1.如果synchronized 修饰的是 普通的实例方法,那么锁定的就是当前对象的锁,简称对象锁
+2.如果synchronized 修饰的是 static 方法 ,那么锁定的就是Class(JVM 方法区中的)锁,简称类锁
+3.如果多个Thread 调用 不同的对象的 非static, synchronized 的方法,起不到排他性的作用

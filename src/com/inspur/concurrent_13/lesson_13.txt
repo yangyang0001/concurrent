@@ -1,0 +1,2 @@
+PriorityBlockingQueue<T>:按照优先级的方式进行take()的阻塞队列
+T必须已经实现了Comparable接口,自己定制一个比较的规则!

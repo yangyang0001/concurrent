@@ -1,0 +1,4 @@
+synchronized 各种使用方式
+1.可以当前对象锁this, 任何已经实例化的对象作为锁, Class 类锁
+2.如果是Object类型的锁,假设是Student实例类型的 Student内部有username password两个属性,如果 在进入synchronized 后对
+  Student实例 进行属性修改,其锁不会改变!

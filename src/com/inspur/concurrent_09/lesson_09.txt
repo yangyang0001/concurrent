@@ -1,0 +1,1 @@
+ThreadLocal的使用方法相当于一个Map<Thread, T>

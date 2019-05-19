@@ -1,0 +1,5 @@
+1.ConcurrentHashMap 内存采用segment的方式进行分段,对锁的粒度进行降低!最多可以分为16个段,可以提高吞吐量
+
+2.CopyOnWrite 当发生Write操作的时候,会先Copy一个副本！Write操作去操控副本,完成后指针指向这个副本!
+  CopyOnWrite的实现类:CopyOnWriteArrayList CopyOnWriteArraySet
+  这种并发容器适合读多写少的情况

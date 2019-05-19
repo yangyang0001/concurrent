@@ -1,0 +1,1 @@
+本程序主要通过MyThread 来测试 syncronized

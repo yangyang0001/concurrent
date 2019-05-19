@@ -1,0 +1,5 @@
+本包下的程序主要讲:
+1.  wait  notify     方法是Object类中的方法
+2.  wait() 释放锁  notify()方法不释放锁 , 并且这两个方法必须和synchronized 联合使用才行!
+3.  以上三者必须联合使用才能奏效!
+4.  wait() 方法必须在while(condition) 代码块中!

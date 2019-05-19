@@ -1,0 +1,3 @@
+DelayQueue 比上一个PriorityBlockingQueue多了一个 对剩余时间的检查 compareTo()
+1.getDelay()  :获取剩余的延迟时间,内部有减法操作。    作用:等待take()方法从队列中获取
+2.compareTo() :类似于优先级PrirityBlockingQueue  作用:上面take()时对队列进行排序

@@ -5,6 +5,8 @@ package com.inspur.concurrent_09;
  * Date: 2019/5/7-11:43
  * Description: No Description
  * ThreadLocal 相当于一个Map<Thread, T> map 类型,这种情况下 以线程为Key, T类型的值为value 所以会产生覆盖的情况!
+ *
+ * ThreadLocal<T>
  */
 public class ThreadLocalTest {
 

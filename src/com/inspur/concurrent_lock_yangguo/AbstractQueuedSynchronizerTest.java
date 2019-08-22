@@ -14,7 +14,7 @@ public class AbstractQueuedSynchronizerTest {
 
 	private int count = 0;
 
-	private ReentrantLock lock = new ReentrantLock(true);
+	private ReentrantLock lock = new ReentrantLock(false);
 
 	private CountDownLatch countDownLatch;
 
@@ -65,7 +65,8 @@ public class AbstractQueuedSynchronizerTest {
 		}
 
 		for(int i = 0; i < threadCount; i++){
-			executorService.execute(threads[i]);
+//			executorService.execute(threads[i]);
+			threads[i].start();
 			countDownLatch.countDown();
 		}
 

@@ -1,5 +1,6 @@
 package com.inspur.concurrent_11;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -23,6 +24,8 @@ public class UseConcurrentHashMap {
         for(Map.Entry<String, String> entry : concurrentHashMap.entrySet()){
             System.out.println(entry.getKey() + "--------" + entry.getValue());
         }
+
+        Map<String, String> hashMap = new HashMap<String, String>();
     }
 
 }

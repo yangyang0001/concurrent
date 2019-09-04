@@ -32,6 +32,12 @@ class Temp extends Thread {
             System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
         } catch (Exception ex) {
             ex.printStackTrace();
+            Thread thread = new Thread();
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
